@@ -1,3 +1,7 @@
-// Задание 3
-let string = 'Hello'
-console.log(string[4] + string[3] + string[2] + string[1] + string[0]);
+/* Задание 3
+Дана строка. Необходимо вывести в консоль перевёрнутый вариант. Например, "Hello" -> "olleH".*/
+
+const str = "Hello";
+const reverse = str.split('').reverse().join('');
+
+console.log(reverse);

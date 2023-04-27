@@ -1,10 +1,9 @@
-// Задание 5
-let array = [26, 'love', undefined, null, -17];
+/* Задание 5
+Дан произвольный массив. Необходимо вывести количество элементов массива, 
+затем перебрать его и вывести в консоль каждый элемент массива.*/
 
-console.log(array.length);
+let arr = [26, 'love', undefined, null, -17];
 
-let result = array.map(function(item, index, array) {
-  return item
-});
+console.log(arr.length);
 
-console.log(result);
+arr.forEach((item) => { console.log(item) });
