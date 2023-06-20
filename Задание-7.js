@@ -23,3 +23,26 @@
   console.log("Even is " + countEven);
   console.log("Odd is " + countOdd);
   console.log("Other is " + countOther);
+
+  // Вариант 2 
+let elements = [26, 35, null, 'love', 42];
+
+let sumEven = 0;
+let sumOdd = 0;
+let sumOther = 0;
+
+for (i = 0; i < elements.length; i++) {
+  if (Number.isFinite(elements[i])) {
+    if (elements[i] % 2 === 0) {
+      sumEven = sumEven + 1;
+    } else {
+      sumOdd = sumOdd + 1;
+    };
+  } else {
+    sumOther = sumOther + 1;
+  };
+};
+
+alert( sumEven );
+alert( sumOdd );
+alert( sumOther );

@@ -3,3 +3,11 @@
 
 const randomNumber = Math.floor(Math.random() * 101);
 console.log(randomNumber);
+
+// Вариант 2
+function randomInteger(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+  }
+  
+  alert( randomInteger(0, 100) );

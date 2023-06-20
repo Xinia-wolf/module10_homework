@@ -13,3 +13,21 @@ function checkArrayType(arr) {
   
   console.log(checkArrayType([3,6,7,'3']));
   console.log(checkArrayType1([3,6,7,3]));
+
+
+  // Вариант 2
+  let arr = [26, 26, 26];
+
+arr.map(function(item, index, array) {
+  outer: for (let i = 0; i < arr.length; i++) {
+    for (let j = 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        alert( 'Элементы равны' );
+      } else {
+        alert( "Элементы не равны" );
+        break outer;
+      };
+    };
+  };
+  alert( 'Равенство элементов проверено' );
+});

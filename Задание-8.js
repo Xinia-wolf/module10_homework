@@ -10,3 +10,14 @@ superMap.set(false, 2023);
 for (let x of superMap.keys()){
   console.log(`Ключ - ` + x + `, значение - `+ superMap.get(x));
 }
+
+// Вариант 2
+let map = new Map();
+
+map.set("name", "John");
+map.set("age", 30);
+map.set("profession", "developer");
+
+map.forEach((value, key, map) => {
+  console.log(`Ключ - ${key}, значение - ${value}`);
+});
